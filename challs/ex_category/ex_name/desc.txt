@@ -1,1 +1,0 @@
-This file contain the description as it will be shown on the website.
