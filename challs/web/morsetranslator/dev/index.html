@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Morse Translator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Morse Translator">
+    <meta name="author" content="mezzer">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row clearfix">
+	<div class="col-md-12 column">
+	  <div class="page-header">
+	    <a href="./" style="text-decoration:none;color:black">
+	      <h1>Morse Translator</h1>
+	    </a>
+	  </div>
+	  <div class="tabbable">
+	    <ul class="nav nav-tabs">
+	      <li class="active"><a href="#panel-translate" data-toggle="tab">Translate</a></li>
+	      <li><a href="#panel-last" data-toggle="tab">Last Translations</a></li>
+	      <li><a href="#panel-about" data-toggle="tab">About</a></li>
+	    </ul>
+	    <div class="tab-content">
+	      <div class="tab-pane active" id="panel-translate">
+		  <br />
+		  <form class="form-group">
+		    <textarea class="form-control" rows="5" id="morse"></textarea>
+		    <br />
+		    <input type="button" class="btn btn-default" value="Translate" style="width:40%; float: left" id="translate" />
+		    <input type="button" class="btn btn-default" value="Clear" style="width:40%; float: right" id="clear" />
+		  </form>
+		  <br />
+		  <br />
+		  <textarea class="form-control" rows="5" id="result" style="display:none"></textarea>
+	      </div>
+	      <div class="tab-pane" id="panel-last">
+		<br />
+	      </div>
+	      <div class="tab-pane" id="panel-about">
+		<br />
+		<div class="jumbotron">
+		  <h1>About</h1>
+		  <p>
+		    This is a morse to ascii translator.
+		    <br />
+		    Have Fun!<br />
+		  </p>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </body>
+</html>

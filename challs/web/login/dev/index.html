@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Web login</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <form id="loginform" class="form-signin" action="login.php" method="post">
+        <h2 class="form-signin-heading">Login</h2>
+        <label for="user" class="sr-only">User</label>
+        <input type="text" id="user" name="user" class="form-control" placeholder="User" required autofocus>
+        <label for="password" class="sr-only">Password</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="button" onclick="submit_form(document.getElementById('loginform'));">Login</button>
+	<br />
+	<div id="errmsg" class="alert alert-danger" role="alert"></div>
+
+      </form>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

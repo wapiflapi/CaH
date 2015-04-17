@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo "This is a shell script. We use bash's read builtin."
+echo "You can spread input over multiple lines by ending a line with '\'."
+
+read username || exit 1
+
+if [[ $username == *'"'* ]]; then
+    echo "Sorry the usage of '"'"'"' is forbidden."
+    exit 1
+fi
+
+FILENAME=$RANDOM$RANDOM"_chall_script_"$(date +%s)
+
+cat <<EOF > $FILENAME.c
+#include <stdio.h>
+int main() {
+ printf("Hi %s.\nHave a nice day %s.\n", "$username", "$username");
+ return 0;
+}
+EOF
+
+/usr/bin/gcc $FILENAME.c -o $FILENAME -Werror && ./$FILENAME
+rm -f $FILENAME $FILENAME.c
