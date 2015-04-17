@@ -5,12 +5,12 @@
 ## Login   <ampotos@epitech.net>
 ## 
 ## Started on  Mon Apr 13 21:08:42 2015 
-## Last update Wed Apr 15 20:09:11 2015 
+## Last update Fri Apr 17 22:29:38 2015 
 ##
 
 CC = gcc
 
-CFLAGS += -std=gnu99 -shared
+CFLAGS += -std=gnu99 -shared -fno-stack-protector
 
 RM = rm -f
 
