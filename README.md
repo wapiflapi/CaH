@@ -1,8 +1,8 @@
-Cyber@Hack 2015 challenges
+Cyber@Hack 2015 ctf
 ======
 
 The Cyber@Hack is a security event organized by Epitech Toulouse and ITrust.
-Here we release the challenges as it is.
+Here we release the ctf organized by the security lab of Epitech Toulouse.
 
 Feel free to PR this readme to add link of writups.
 
