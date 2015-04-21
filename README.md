@@ -17,7 +17,7 @@ Note that both those folders are optional, they might not make sense for all cha
 Most chalenges that need to run on the CTF servers provide a xinetd configuration file, there might be some exceptions with source code running directly on appache and/or php.
 
 Contribute
-=========
+==========
 
 Please feel free to open an issue if you notice something strange or have a question. We are also on IRC on several channels (look for SiN, eax64, ampotos, BestPig and wapiflapi).
 
