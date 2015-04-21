@@ -1,6 +1,6 @@
 <?php
 
-include("flag.php")
+include("flag.php");
 
 if (!isset($_GET["a"]))
   die("Nop");

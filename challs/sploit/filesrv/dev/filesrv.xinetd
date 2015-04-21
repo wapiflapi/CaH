@@ -1,0 +1,12 @@
+service filesrv
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = someuser
+    bind        = 0.0.0.0
+    server      = /path/to/filesrv/filesrv
+    type        = UNLISTED
+    port        = 9999
+}
