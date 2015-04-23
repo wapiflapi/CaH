@@ -5,7 +5,7 @@
 ## Login   <sin@epitech.net>
 ##
 ## Started on  Mon Mar  9 00:23:03 2015 
-## Last update Fri Mar 20 22:27:36 2015 
+## Last update Thu Apr 23 18:02:17 2015 
 ##
 
 import socket
@@ -35,8 +35,12 @@ def process(clisock):
     levels.level3(clisock)
 
 if __name__ == "__main__":
-    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.bind(('0.0.0.0', int(sys.argv[1])))
+    try:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.bind(('0.0.0.0', int(sys.argv[1])))
+    except IndexError:
+        print 'usage: ./main.py <port nb>'
+        exit()
     sock.listen(5)
     while 1:
         (clisock, addr) = sock.accept()
